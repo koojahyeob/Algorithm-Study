@@ -4,10 +4,10 @@ n = int(input())
 stair = []
 d = [0] * n
 
-for _ in range(n):
+for _ in range(n): # 계단 입력 받기
     stair.append(int(input()))
     
-def climbstairs(n):
+def climbstairs(n): # 계단 dp 점화식 만들기
     if n == 1:
         d[0] = stair[0]
         return d[0]
